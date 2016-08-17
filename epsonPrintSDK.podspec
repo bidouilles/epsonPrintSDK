@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.source_files  = '*.h'
   s.preserve_paths = 'libepos2.a'
   s.frameworks = 'UIKit', 'CoreGraphics', 'ExternalAccessory'
-  s.library   = 'epos2', 'z'
+  s.library   = 'epos2', 'z', 'xml2'
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/epsonPrintSDK"' }
 end
